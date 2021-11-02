@@ -1,0 +1,21 @@
+#include <cmath>
+bool checkMember(int n){
+
+  /* Don't write main().
+   * Don't read input, it is passed as function argument.
+   * Return output and don't print it.
+   * Taking input and printing output is handled automatically.
+  */
+   int sq = 5*n*n;
+    int less = sq-4;
+    int more = sq+4;
+    
+    if (pow((int)pow(less,0.5),2) == less or pow((int)pow(more,0.5),2) == more){
+        return true;
+    }
+    else{
+        return false;
+    }
+
+
+}
