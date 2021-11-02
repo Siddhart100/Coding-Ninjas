@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	// Write your code here
+	int n;
+    cin>>n;
+    int p,c;
+    cin>>p;
+    int count=2;
+    bool dec=true;
+    bool var=true;
+    while(count<=n){
+        cin>>c;
+        if(p>c){
+        if(dec==false){
+            var=false;
+        break;}
+        }
+        else if(c>p){
+            dec=false;}
+        
+        else if(c==p){
+            var=false;
+                break; }
+        p=c;
+        count++; 
+    }
+    
+    if(var){
+        cout<<"true";}
+    
+    else{
+        cout<<"false"; }
+    
+}
