@@ -1,0 +1,19 @@
+
+#include<cstring>
+void removeAllOccurrencesOfChar(char input[], char c) {
+    
+    int j = 0;
+    int  len=strlen(input);
+   for(int i=0;i<=len;i++){
+        if(input[i] == c){
+            continue;
+        }
+      
+        else{
+            input[j]=input[i];
+            j++;
+        }
+       
+    }
+   
+}
