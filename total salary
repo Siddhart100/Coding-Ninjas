@@ -1,0 +1,44 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main() {
+    double ts;
+    int b1;
+    int c;
+    double d;
+    double b;
+    int d1;
+    double h;
+    int a;
+    double p;
+    char g;
+    cin>>b;
+    cin>>g;
+    
+    h=0.2*b;
+    d=0.5*b;
+    p=0.11*b;
+     
+    if(g=='A')
+    {
+        ts=b+h+d+1700-p;
+         b1= round(ts);
+        cout<<b1;
+        
+    }
+    else if (g =='B')
+    {
+        ts=b+h+d+1500-p;
+         c=round(ts);
+            cout<<c;
+    }
+    else 
+    {
+        ts = b+h+d+1300-p;
+         d1=round(ts);
+            cout<<d1;
+    }
+    
+	
+}
