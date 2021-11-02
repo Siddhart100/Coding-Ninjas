@@ -1,0 +1,20 @@
+int tripletSum(int arr[], int size, int x) {
+
+    long i,j,k;
+    int count = 0;
+    for(i=0;i<size;i++)
+    {
+        for(j=i+1;j<size;j++)
+        {
+            for(k=j+1;k<size;k++)
+            {
+                if(x==arr[i]+arr[j]+arr[k])
+                {
+                   count++;
+                }
+            }
+        }
+    }
+    return count;
+
+}
