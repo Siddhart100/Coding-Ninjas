@@ -1,0 +1,41 @@
+void stringCompression(char input[]) {
+int l=strlen(input);
+    int count=1;
+    int curr=0;
+    for(int i=0;i<l;i++){
+        
+        if(input[i]==input[i+1]){
+            count++; 
+        }
+        else{
+            
+            if(count==1)
+            {
+                input[curr]=input[i];
+                curr++;
+                count=1;
+            }
+            else{
+                input[curr]=input[i];
+                curr++;
+                char c='0'+count;
+                input[curr]=c;
+                 curr++;
+                count=1;
+                
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        
+        
+        
+        }
+    input[curr]='\0';
+}
